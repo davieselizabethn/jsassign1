@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS App</title>
+</head>
+<html>
+    <body>
+
+<script>
+
+        function startprogram(){
+            let input1=prompt("Please enter first value");
+            
+            if(input1===null || isNaN(input1))
+            {
+                input1=0;
+            }
+        let input2=prompt("please enter second value");
+
+        if(input2===null || isNaN(input2))
+        {
+            input2=0;
+        }
+
+        if(input1 < input2)
+        {
+            alert("The larger number is: " + input2);
+        }
+        
+        if(input1 > input2){
+            alert("The larger number is: " + input1);
+        }
+        if(input1 === input2){
+            alert("The larger numbers are equal");
+        }
+
+    }
+    
+ </script>
+    <button type="button"onclick="startprogram()">
+    SRART
+    </button>
+
+    </body>
+
+</html>
